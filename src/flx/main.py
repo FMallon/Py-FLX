@@ -141,7 +141,7 @@ def parse_args():
 
             display_app(alias)
 
-        case "-da" | "--display-all-app":
+        case "-da" | "--display-all-apps":
 
             validate_args_length("-eq", 2)
             from flx.scripts.display_all_apps import display_all_apps

@@ -53,6 +53,7 @@ def edit_config_default(check_config: bool = True) -> int:
         "nvim", 
         "neovim",
         "emacs",
+        "vim"
         "vi",
         ]
 
