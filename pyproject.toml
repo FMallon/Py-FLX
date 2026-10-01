@@ -10,7 +10,7 @@ authors = [
 keywords = ["launcher", "application-launcher", "cli", "lua", "shell"]
 dependencies = [
     "Pillow",
-    "pywebview",
+    "pywebview[qt]",
 ]
 
 [project.scripts]
