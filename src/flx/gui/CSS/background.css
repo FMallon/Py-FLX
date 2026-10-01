@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgb(70, 45, 75),
+            rgb(25, 25, 30) 55%,
+            rgb(15, 15, 18)
+        );
+
+    min-height: 100vh;
+    
+}
+
+#background-secondary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 180px);
+    justify-content: center;
+    align-content: start;
+    gap: 25px;
+    padding: 40px;
+}

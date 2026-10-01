@@ -1,27 +1,25 @@
-[build-system]
-requires = ["setuptools>=61"]
-build-backend = "setuptools.build_meta"
-
 [project]
 name = "flx"
-version = "0.1.0"
+version = "0.2.0"
 description = "A Lua-config-driven application launcher and local bin"
 readme = "README.md"
 requires-python = ">=3.10"
-license = "MIT"
 authors = [
     {name = "Finn Mallon"},
 ]
 keywords = ["launcher", "application-launcher", "cli", "lua", "shell"]
+dependencies = [
+    "Pillow",
+    "pywebview",
+]
 
 [project.scripts]
 flx = "flx.main:main"
 
-[tool.setuptools]
-package-dir = {"" = "src"}
-
-[tool.setuptools.packages.find]
-where = ["src"]
-
 [tool.setuptools.package-data]
-flx = ["scripts/*.lua"]
+flx = [
+    "scripts/*.lua",
+    "gui/HTML/*.html",
+    "gui/CSS/*.css",
+    "gui/JS/*.js",
+]
